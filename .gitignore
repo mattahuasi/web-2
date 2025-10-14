@@ -1,0 +1,14 @@
+*.doc
+*.docx
+*.dot
+*.dotx
+*.xls
+*.xlsx
+*.xlsm
+*.xlt
+*.xltx
+*.ppt
+*.pptx
+*.pps
+*.ppsx
+~$*

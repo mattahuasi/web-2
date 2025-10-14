@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  background: #bbcfe8;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#principal {
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid #888;
+  background: #fff;
+  /* curved border radius */
+  -webkit-border-radius: 5px 10px; /* Safari */
+  border-radius: 20px;
+  -moz-border-radius: 20px; /* Firefox */
+}
+
+nav {
+  width: 940px;
+  height: 50px;
+  margin: 0 auto;
+  background: #666;
+}
+
+#main {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 30px;
+  background: #fff url(images/colbg.png) repeat-y;
+  overflow: hidden;
+}
+
+#content {
+  float: right;
+  width: 640px;
+  margin-right: 30px;
+}
+
+#sidebar {
+  float: left;
+  padding-left: 20px;
+  width: 220px;
+}
+
+footer {
+  width: 940px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/*Combinacion de selectores multiples*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  clear: both;
+  color: #333;
+}
+
+a:link,
+a:visited {
+  color: #004c9a;
+}
+
+a:hover,
+a:active {
+  color: #333;
+}
+
+p {
+  margin-bottom: 18px;
+}
+
+li {
+  padding-left: 5px;
+}
+
+/* nav */
+
+nav .menu {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav .menu ul {
+  margin: 0;
+  padding: 17px 0 0 20px;
+  list-style: none;
+  line-height: normal;
+}
+
+nav .menu li {
+  display: block;
+  float: left;
+}
+
+nav .menu a {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  padding: 0px 15px;
+  text-decoration: none;
+  color: #33f;
+}
+
+nav .menu a:hover {
+  text-decoration: underline;
+}
+/*Fin de nav*/
+
+/** HEADER */
+
+header {
+  padding: 20px 0 0 0;
+}
+
+header img {
+  clear: both;
+  display: block;
+}
+
+header > h1 {
+  float: left;
+  margin: 0 0 18px 10px;
+  width: 600px;
+  font-size: 40px;
+  line-height: 36px;
+}
+
+header > h1 a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*Selector de hijos (>); cualquier elemento <h2> que sea hijo directo de un elemento <header>*/
+/*p>span{ color: blue; } CUMPLE:<p><span>Texto1</span></p> NO CUMPLE:<p><a href="#"><span>Texto2</span></a></p>*/
+header > h2 {
+  color: #777;
+  clear: right;
+  float: right;
+  font-style: italic;
+  font-size: 14px;
+  margin: 14px 10px 18px 0;
+}
+
+article img {
+  border: none;
+  box-shadow: 5px -2px 5px #999;
+}
+
+#content p,
+ul,
+ol,
+hr {
+  margin-bottom: 24px;
+}
+
+#content ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+#content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  margin: 0 0 20px 0;
+  line-height: 1.5em;
+}
+
+.alignleft,
+img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+}
+
+.alignright,
+img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 10px;
+}
+
+.aligncenter,
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+  margin-bottom: 12px;
+}
+
+aside h3 {
+  font-size: 18px;
+}
+
+aside ul {
+  list-style: square;
+  color: #bbb;
+  margin: -15px 0 15px 25px;
+}
+
+#footer-area {
+  background: #3d6497;
+  color: #fff;
+  font-size: 90%;
+  padding: 18px 0;
+  overflow: hidden;
+  /* curved border radius */
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+}
+
+.footer-segment {
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 190px;
+}
+
+footer aside h4 {
+  color: #faf0e6;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+footer ul {
+  list-style: none;
+  margin: -15px 0;
+}
+
+footer a:link,
+footer a:visited {
+  color: #bbcfe8;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: -15px;
+  color: #faf0e6;
+}

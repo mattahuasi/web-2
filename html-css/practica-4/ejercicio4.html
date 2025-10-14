@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plantilla CSS grid</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      .c1 {
+        grid-area: header;
+        background-color: #f02035;
+        color: white;
+      }
+      .c2 {
+        grid-area: menu;
+        background-color: #f16060;
+        font-weight: bold;
+      }
+      .c3 {
+        grid-area: main;
+        background-color: #edb3b3;
+        font-family: "Courier New";
+      }
+      .c4 {
+        grid-area: right;
+        background-color: #e8d5d5;
+        font-family: Georgia;
+      }
+      .c5 {
+        grid-area: footer;
+        background-color: #f2e3e3;
+        font-family: Verdana;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header header header"
+          "menu main main main right right"
+          "menu footer footer footer footer footer";
+        gap: 3px;
+        padding: 10px;
+      }
+      .grid-container div {
+        text-align: justify;
+        padding: 20px 0;
+        font-size: 20px;
+        border-radius: 5px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .grid-container {
+          grid-template-areas: "header" "menu" "main" "right" "footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Módulo de diseño de cuadrícula CSS</h1>
+    <div class="grid-container">
+      <div class="c1">
+        Hasta ahora hemos visto como definir cuadrículas Grid CSS donde
+        definimos sus filas y sus columnas a través de propiedades como
+        grid-template-rows y grid-template-columns
+      </div>
+      <div class="c2">
+        Sin embargo, no es la única forma de definir cuadrículas en CSS
+      </div>
+      <div class="c3">
+        Si necesitamos un poco más de flexibilidad a la hora de definir un grid,
+        podemos utilizar una funcionalidad denominada Grid por áreas
+      </div>
+      <div class="c4">
+        que permite de forma casi gráfica y visual, definir mediante texto la
+        ubicación y forma que van a tener las celdas de nuestra cuadrícula.
+      </div>
+      <div class="c5">
+        Este diseño de cuadrícula contiene seis columnas y tres filas.
+      </div>
+    </div>
+  </body>
+</html>

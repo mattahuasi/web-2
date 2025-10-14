@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Madimi One", sans-serif;
+}
+.contenedor {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  font-family: Verdana;
+}
+header {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #0000ff;
+  font-size: 15px;
+}
+
+header a {
+  margin-right: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  transition: all ease 300ms;
+}
+header a:hover {
+  color: rgb(50, 210, 100);
+}
+
+.contactos {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 30%;
+  height: 100%;
+  background-color: #0000ff;
+
+  color: #fff;
+  border-radius: 15px;
+}
+span {
+  margin-left: 20px;
+  font-size: 17px;
+}
+h3 {
+  text-align: center;
+}
+.inp {
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  background-color: rgba(247, 247, 249, 0.1); /*color azul con 10% de opacidad*/
+  width: 90%;
+  margin-left: 8px;
+  margin-bottom: 15px;
+  height: 25px;
+  border: solid 2px rgba(255, 255, 255);
+  font-size: 15px;
+  color: #fff;
+  text-align: right;
+  transition: all 1000ms ease;
+}
+
+.boton {
+  width: 90%;
+  height: 25px;
+  font-size: 22px;
+  border: 0;
+  background: rgba(255, 0, 0, 0);
+  border-bottom: solid 2px #fff;
+  color: #fff;
+  margin-top: 25px;
+  transition: all 200ms ease;
+}
+.boton:hover {
+  width: 100%;
+  border-bottom: solid 5px #f00;
+}
+
+span {
+  color: #ffffff;
+}

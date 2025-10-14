@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--<meta charset="iso-8859-1"> -->
+    <title>Plantilla CSS grid</title>
+    <style>
+      .grid-container {
+        display: grid; /* Se convierte en un contenedor de cuadrícula*/
+        grid-template-columns: auto auto auto; /* diseño de cuadrícula de 3 columnas, todas las columnas el mismo ancho (auto). o repeat(3, 1fr)*/
+        grid-template-rows: 80px 400px 80px; /* Cada valor define la altura de la fila respectiva*/
+        gap: 15px;
+        align-content: center; /* Alinea al centro verticalmente toda la cuadrícula dentro del contenedor. */
+        background-color: #2196f3;
+        padding: 10px;
+      }
+      .c1 {
+        grid-column: 1 / 4; /* El elemento c1 comience en la columna 1 y termine antes de la columna 4*/
+      }
+      .c3 {
+        grid-row: 2 / 4; /* El elemento c3 comience en la fila 2 y termine antes de la fila 4*/
+      }
+      .c5 {
+        grid-column: 2 / 3; /* El elemento c5 comience en la columna 2 y termine antes de la columna 4*/
+      }
+      .grid-container div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 40px;
+        color: blue;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        justify-items: center;
+      }
+
+      ul > li {
+        padding: 4px;
+      }
+
+      ul > li > a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: darkblue;
+
+        &:hover {
+          color: indigo;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      grid-template-rows; Propiedad para especificar el tamaño (altura) de cada
+      fila.
+    </h1>
+
+    <div>
+      <ul>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="ejercicio2.html">ejercicio 2</a>
+        </li>
+        <li>
+          <a href="ejercicio3.html">ejercicio 3</a>
+        </li>
+        <li>
+          <a href="ejercicio4.html">ejercicio 4</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid-container">
+      <div class="c1">c1</div>
+      <div>c2</div>
+      <div class="c3">c3</div>
+      <div>c4</div>
+      <div class="c5">c5</div>
+      <div>c6</div>
+    </div>
+  </body>
+</html>

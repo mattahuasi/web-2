@@ -1,0 +1,55 @@
+				<article>
+
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-xs-2">Entidad</label>
+							<div class="col-xs-9">
+								<input type="text" class="form-control" name="placeholderEl " value="" size=50
+									placeholder="Nombre de la institucion" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-2">Mes</label>
+							<div class="col-xs-5">
+								<input type="month" class="form-control " name="date" value="">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-2">Correo electronico</label>
+							<div class="col-xs-4">
+								<input type="email" class="form-control " />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-2">Direccion URL</label>
+							<div class="col-xs-4">
+								<input type="url" class="form-control " />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-xs-2">Telefono</label>
+							<div class="col-xs-9">
+								<input type="text" title="numero de 7 digitos">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-12 col-xs-offset-5">
+								<label class="checkbox-inline">
+									<input type="checkbox" value="news">Confirmado </label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-xs-10 col-xs-offset-5">
+								<input type="submit" class="btn btn-primary" value="Enviar">
+								<input type="reset" class="btn btn-danger" value="Limpiar">
+							</div>
+						</div>
+					</form>
+				</article>
+				<!-- Fin Formulario con Bootstrap-->

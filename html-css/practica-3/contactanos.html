@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/styleForm.css" />
+
+    <title>Document</title>
+
+    <script>
+      function confirmarSubmit() {
+        return confirm("Desea confirmar el formulario...?");
+      }
+
+      function confirmarReset() {
+        Swal.fire({
+          title: "Envío cancelado",
+          text: "Empresa SoftTech s.r.l.",
+          icon: "success",
+          confirmButtonText: "Confirmar",
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <h1 class="title">Comunícate con la UMSA</h1>
+        <a href="">Regístrate</a>
+      </header>
+      <div class="contactos">
+        <article>
+          <form
+            name="miFormulario"
+            onsubmit="confirmarSubmit()"
+            onreset="confirmarReset()"
+          >
+            <h3>Formulario de contactos</h3>
+            <span>Paterno</span>
+            <input
+              type="text"
+              class="inp"
+              value=""
+              autofocus
+              required
+              placeholder="Paterno"
+            />
+            <span>Materno</span>
+            <input
+              type="text"
+              class="inp"
+              value=""
+              autofocus
+              required
+              placeholder="Materno"
+            />
+            <span>Nombres</span>
+            <input
+              type="text"
+              class="inp"
+              value=""
+              autofocus
+              required
+              placeholder="Nombres"
+            />
+            <span>Fecha de nacimiento</span>
+            <input
+              type="date"
+              class="inp"
+              value=""
+              placeholder="Fecha de nacimiento"
+            />
+            <span>Edad</span>
+            <input
+              type="text"
+              class="inp"
+              value=""
+              pattern="[0-9]{2}"
+              required
+              placeholder="Edad"
+            />
+            <!-- <span>Email</span> -->
+            <input type="email" class="inp" placeholder="Correo electrónico" />
+            <span>Teléfono</span>
+            <input
+              type="number"
+              class="inp"
+              title="numero de 7 dígitos"
+              placeholder="Teléfono"
+            />
+            <div>
+              <input type="submit" value="enviar" class="boton" />
+              <input type="reset" id="Limpiar" value="Limpiar" class="boton" />
+            </div>
+          </form>
+          <button id="enviar" class="boton">Cancelar</button>
+        </article>
+      </div>
+    </div>
+    <script src="js/mensaje.js"></script>
+  </body>
+</html>

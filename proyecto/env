@@ -1,0 +1,6 @@
+VITE_RESTCOUNTRIES_BASE_URL=https://restcountries.com/v3.1
+
+VITE_WIKIPEDIA_BASE_URL=https://es.wikipedia.org/api/rest_v1
+
+VITE_PEXELS_BASE_URL=https://api.pexels.com/v1
+VITE_PEXELS_API_KEY=
